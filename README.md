@@ -64,7 +64,7 @@ npm run lint
 
 - In the **Candidate** panel:
   - Enter your email.
-  - Click **Load** to fetch your `uuid` and `candidateId`.
+  - Click **Load** to fetch your `uuid`, `candidateId` and `applicationId`.
 - Click **Load jobs** to fetch the list of open positions.
 - In **Open positions**:
   - For the position you want to apply to, enter your repository URL.
