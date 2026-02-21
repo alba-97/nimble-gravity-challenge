@@ -27,7 +27,7 @@ export function JobsList({
 }: JobsListProps) {
   return (
     <ul className="jobsList">
-      {jobs.map((job) => (
+      {jobs.length > 0 ? jobs.map((job) => (
         <JobCard
           key={job.id}
           job={job}
@@ -39,7 +39,7 @@ export function JobsList({
           submitOk={submitOkByJobId[job.id] ?? false}
           isDisabled={isSubmitDisabledByJobId[job.id] ?? true}
         />
-      ))}
+      )) : <p className="mutedText">Click "Load jobs" to see the list of open positions</p>}
     </ul>
   )
 }
