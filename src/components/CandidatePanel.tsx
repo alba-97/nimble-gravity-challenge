@@ -70,6 +70,10 @@ export function CandidatePanel({
               <dd className="definitionValue">{candidate.email}</dd>
             </div>
             <div className="definitionRow">
+              <dt className="definitionTerm">Application ID</dt>
+              <dd className="definitionValue">{candidate.applicationId}</dd>
+            </div>
+            <div className="definitionRow">
               <dt className="definitionTerm">UUID</dt>
               <dd className="definitionValue">{candidate.uuid}</dd>
             </div>
